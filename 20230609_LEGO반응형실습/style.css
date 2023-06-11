@@ -80,6 +80,82 @@ background-size: cover;
 background-position: center top;
 }
 
+@media screen and (min-width: 768px) {
+.sm-only {
+display: none;    
+}
 
+.sm-hidden {
+display: block;
+}
+
+.md-only {
+display: block;
+}
+
+nav {
+justify-content:space-around;
+padding: 5px auto;
+}
+
+.gnb-list {
+display: flex;
+justify-content: space-between;
+width: 300px;
+font-weight: bold;
+}
+
+.gnb-icon-glass i {
+font-size: 20px; 
+padding-left: 400px; 
+}
+
+.lego {
+padding-left: 10px; 
+}
+
+.lego img {
+width: 30px;
+border-radius: 15px;
+}
+
+.lg-icon i{
+font-size: 20px;  
+}
+
+.md-icon {
+display: flex;
+}
+
+.md-icon i {
+padding-left: 5px;
+}
+
+.background {
+height: 400px;
+}
+}
   
+@media screen and (min-width: 1200px) {
+.lg-hidden {
+    display: none;
+}
 
+.md-only {
+display: none;
+}
+
+.lg-only {
+display: block;
+}
+
+.gnb-icon-glass i{
+font-size: small;
+color: #555;
+}
+
+
+.background {
+height: 500px;
+}
+}
