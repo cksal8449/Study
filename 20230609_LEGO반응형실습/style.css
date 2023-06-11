@@ -34,13 +34,16 @@ display: none;
 display: none; 
 }
 
+header {
+background-color: rgb(255, 204, 0);
+}
+
 nav {
 display: flex;
 justify-content: space-between;
 align-items: center;
 margin: 0 auto;
 padding: 5px 20px;
-background-color: rgb(255, 204, 0);;
 }
 
 .gnb-icon-btn i {
@@ -61,16 +64,16 @@ display: flex;
 padding: 10px 0;
 background-color: #fff;
 }
-  
-.lnb-item:first-child {
- margin-left: 20px;
-}
-  
+
 .lnb-item a {
-padding: 0 20px;
+padding: 0 10px;
 font-weight: bold;
 }
-
+  
+.lnb-item:first-child {
+ margin-left: 10px;
+}
+  
 .background {
 height: 300px;
 background-image: url(./images/lego.png);
@@ -78,6 +81,47 @@ background-repeat: repeat;
 background-position: center;
 background-size: cover;
 background-position: center top;
+}
+
+.sidebar {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 200;
+width: 200px;
+height: 100vh;
+background-color: #fff;
+transform: translateX(-200px);
+transition: transform 300ms ease-in-out;
+border: 2px solid red;
+}
+
+.sidebar.is-active {
+transform: translateX(0);
+}
+
+.side-menu-item a {
+display: block ;
+padding: 10px;
+color: #555;
+}
+
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 100;
+width: 100%;
+height: 100%;
+visibility: hidden;
+opacity: 0;
+background-color: rgba(63, 65, 80, 0.5);
+transition: all 300ms ease-in-out;
+}
+
+.overlay.is-active {
+visibility: visible;
+opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -149,13 +193,30 @@ display: none;
 display: block;
 }
 
+nav {
+padding: 5px 0;
+}
+
 .gnb-icon-glass i{
 font-size: small;
 color: #555;
+}
+
+.lg-icon {
+display: flex;
+}
+
+.lg-icon a {
+padding-left: 5px ;
+}
+
+.lg-icon a:first-of-type {
+padding-left: 5px ; 
 }
 
 
 .background {
 height: 500px;
 }
+
 }
