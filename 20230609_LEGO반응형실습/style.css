@@ -1,0 +1,85 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Orbit', sans-serif;
+}
+
+li {
+list-style: none;
+}
+
+a {
+text-decoration: none;
+color: #000;
+ }
+  
+ .visually-hidden {
+display: none;
+ }
+
+.sm-hidden {
+display: none;
+  } 
+
+.md-only {
+ display: none;
+}
+
+.md-hidden {
+ display: none; 
+}
+
+.lg-only {
+display: none; 
+}
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 auto;
+padding: 5px 20px;
+background-color: rgb(255, 204, 0);;
+}
+
+.gnb-icon-btn i {
+font-size: 35px;
+color: rgb(222, 0, 0);
+}
+
+.logo img {
+width: 100px;
+}
+
+.gnb-icon-glass i {
+font-size: 35px;  
+}
+
+.lnb-list {
+display: flex;
+padding: 10px 0;
+background-color: #fff;
+}
+  
+.lnb-item:first-child {
+ margin-left: 20px;
+}
+  
+.lnb-item a {
+padding: 0 20px;
+font-weight: bold;
+}
+
+.background {
+height: 300px;
+background-image: url(./images/lego.png);
+background-repeat: repeat;
+background-position: center;
+background-size: cover;
+background-position: center top;
+}
+
+
+  
+

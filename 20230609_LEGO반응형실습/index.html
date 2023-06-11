@@ -9,9 +9,93 @@
     <meta name="author" content="chanmi">
     <title>LEGO 반응형 실습</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0fd51a53f4.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 <body>
     <div class="wrapper">
+        <header>
+            <nav>
+                <!-- M 햄버거바 -->
+                <div class="gnb-icon-btn sm-only">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- 로고 이미지 -->
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="logo-img">
+                    </a>
+                </h1>
+
+                <!-- T, D 메뉴 -->
+                <h2 class="visually-hidden">메뉴</h2>
+                <ul class="gnb-list sm-hidden">
+                  <li class="gnb-item"><a href="">제품쇼핑</a></li>
+                  <li class="gnb-item"><a href="">브랜드소개</a></li>
+                  <li class="gnb-item"><a href="">고객지원</a></li>
+                  <li class="gnb-item"><a href="">세일</a></li>
+                </ul>
+
+                <!-- M, T 돋보기 -->
+                <div class="gnb-icon-glass lg-hidden">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <!-- D 검색박스 -->
+                <div class="gnb-icon-glass lg-only">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <P>스토어 검색</P>
+                    </div>
+
+                <!-- T, D 레고얼굴 -->
+                <div class="lego sm-hidden">
+                    <img src="./images/user.jpeg" alt="레고얼굴-img">
+                </div>
+
+                <!-- T 장바구니, 로그아웃 아이콘 -->
+                <ul class="md-icon md-only">
+                    <li class="gnb-item"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="gnb-item"><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                </ul>
+
+
+                <!-- D 장바구니, 로그아웃 텍스트-->
+                <ul class="lg-icon lg-only">
+                    <li class="gnb-item"><a href="">장바구니</a></li>
+                    <li class="gnb-item"><a href="">로그아웃</a></li>  
+                </ul>
+            </nav>
+        </header>
+
+        <div class="lnb-wapper">
+            <ul class="lnb-list">
+                <li class="lnb-item"><a href="">신제품</a></li>
+                <li class="lnb-item"><a href="">독점제품</a></li>
+                <li class="lnb-item"><a href="">행사</a></li>
+                <li class="lnb-item"><a href="">아이디어</a></li>
+                <li class="lnb-item"><a href="">베스트셀러</a></li>
+                <li class="lnb-item"><a href="">레어제품</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <div class="main-wrapper">
+                <section class="background"></section>
+            </div>
+        </main>
 
     </div>
     <script src="./js/sidebar.js"></script>
